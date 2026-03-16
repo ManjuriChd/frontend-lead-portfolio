@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Subtle dark theme defaults */
+:root {
+  color-scheme: dark;
+}
+

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        var key = 'portfolio-theme';
+        var stored = localStorage.getItem(key);
+        var dark = stored === 'dark' || (stored !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        if (dark) document.documentElement.classList.add('dark');
+        else document.documentElement.classList.remove('dark');
+      })();
+    </script>
+    <title>Manjuri Choudhury | Frontend Architect & UI Lead</title>
+    <meta
+      name="description"
+      content="Manjuri Choudhury — Frontend Architect and UI Lead specializing in scalable design systems, accessible UX, and high-performance enterprise web applications."
+    />
+    <meta
+      name="keywords"
+      content="Frontend Architect, UI Lead, Scalable Design Systems, Vue 3, Tailwind CSS, Design Systems, Accessibility, WCAG, Enterprise Frontend"
+    />
+  </head>
+  <body class="antialiased">
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+
