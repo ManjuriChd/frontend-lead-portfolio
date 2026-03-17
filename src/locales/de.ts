@@ -1,11 +1,11 @@
 const de = {
   hero: {
-    eyebrow: 'Frontend-Architekt · UI Lead',
-    title: 'Mein beruflicher Werdegang im Überblick',
+    eyebrow: 'Strategischer UI Lead · Frontend-Architekt',
+    title: 'Eine berufliche Reise: Strategische Portfolio-Highlights',
     intro:
-      'Eine kurze Einführung in mein Profil und meine beruflichen Ziele. Frontend-Architekt und UI Lead mit über 10 Jahren Erfahrung in Luftfahrt, Telekommunikation und Health-Tech – mit Fokus auf zugängliche, performante und skalierbare Weboberflächen.',
-    ctaPrimary: 'Loslegen',
-    ctaSecondary: 'Brauchen Sie Hilfe? Kontakt',
+      'Mit über einem Jahrzehnt spezialisierter Erfahrung in Luftfahrt, Telekommunikation und Gesundheitswesen überbrücke ich die Lücke zwischen komplexer Technik und intuitiver Nutzererfahrung. Mein Fokus liegt auf dem Aufbau leistungsstarker, barrierefreier Frontend-Ökosysteme und skalierbarer Design-Systeme für unternehmensweite digitale Transformation.',
+    ctaPrimary: 'Portfolio erkunden',
+    ctaSecondary: 'Kontakt',
     ctaResume: 'Lebenslauf herunterladen'
   },
   nav: {
@@ -18,19 +18,19 @@ const de = {
   sections: {
     experienceTitle: 'Erfahrung',
     experienceSubtitle:
-      'Frontend-Architekt-Denken mit UI-Lead-Umsetzung – messbar in Geschwindigkeit, Qualität und Wirkung.',
+      'UI-Lead-Umsetzung · Frontend-Architekt-Mindset: Steigerung der Entwicklungsgeschwindigkeit und sichere Codequalität durch skalierbare Architektur.',
     portfolioTitle: 'Portfolio',
     portfolioSubtitle:
-      'Problem → Lösung → Impact. Eine kuratierte Auswahl von Projekten aus Enterprise- und Produktteams.',
+      'Problem, Lösung und messbarer Impact: Ein kuratiertes Portfolio wirkungsvoller Initiativen in Enterprise- und produktgeführten Organisationen.',
     expertiseTitle: 'Technische Expertise',
     expertiseSubtitle:
-      'Fachkompetenzen, abgestimmt auf die Rolle als Frontend-Architekt und UI Lead in Enterprise-Umgebungen.',
+      'Unternehmensreife Kompetenzen für Frontend-Architektur & UI-Governance: Tiefe technische Expertise, abgestimmt auf kritische Branchenstandards\nund Führungsverantwortung.',
     certificationsTitle: 'Zertifizierungen',
     certificationsSubtitle:
-      'Kontinuierliches Lernen in Frontend, UI/UX, Versionsverwaltung und KI-gestützter Entwicklung.',
-    contactTitle: 'Lassen Sie uns Ihr Projekt besprechen',
+      'Bekenntnis zu technischer Exzellenz & kontinuierlicher Weiterentwicklung: Stetige Lernkurve in Frontend-Architektur, UI/UX-Design und KI-gestützter Entwicklung für moderne Lieferstandards.',
+    contactTitle: 'Lassen Sie uns über Ihr Projekt sprechen',
     contactSubtitle:
-      'Offen für Positionen als Frontend-Architekt, UI Lead oder Senior UI Leadership.'
+      'Offen für Rollen als Frontend-Architekt / UI Lead / Senior UI Leadership.'
   },
   expertisePanels: [
     {
@@ -46,20 +46,19 @@ const de = {
       items: [
         'Skalierbare Komponentenbibliotheken und Styleguides',
         'Storybook für Isolation, Wiederverwendbarkeit und Dokumentation',
-        'Konsistente UX-Patterns und schnelles Onboarding von Entwickler:innen'
+        'Konsistente UX-Patterns und Entwickler-Onboarding'
       ]
     },
     {
       title: 'Architektur & Delivery',
       items: [
         'RESTful-Integrationen; Erfahrung mit GraphQL',
-        'OAuth 2.0 und RBAC für sicheren Zugriff',
+        'OAuth 2.0 und RBAC für sicheren UI-Zugriff',
         'Performance-Optimierung und Qualitätspraktiken (WCAG, Tests)',
-        'Agile/Scrum-Moderation und enge Stakeholder-Zusammenarbeit'
+        'Agile/Scrum-Moderation und Stakeholder-Zusammenarbeit'
       ]
     }
   ]
 } as const;
 
 export default de;
-

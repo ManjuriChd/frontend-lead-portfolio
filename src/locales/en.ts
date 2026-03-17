@@ -1,11 +1,11 @@
 const en = {
   hero: {
-    eyebrow: 'Frontend Architect · UI Lead',
-    title: 'Unveiling my professional odyssey: portfolio highlights',
+    eyebrow: 'Strategic UI Lead · Frontend Architect',
+    title: 'A Professional Odyssey: Strategic Portfolio Highlights',
     intro:
-      'A brief introduction about myself and my professional objectives. Strategic Front-End Engineer and UI Lead with 10+ years across Aerospace, Telecommunications, and Healthcare Tech—building accessible, high-performance frontends and scalable design systems.',
-    ctaPrimary: 'Get started',
-    ctaSecondary: 'Need help? Contact',
+      'With over a decade of specialized experience spanning Aerospace, Telecommunications, and Healthcare, I bridge the gap between complex engineering and intuitive user experience. My focus lies in architecting high-performance, accessible front-end ecosystems and scalable design systems that drive enterprise-grade digital transformation',
+    ctaPrimary: 'Explore Portfolio',
+    ctaSecondary: 'Contact',
     ctaResume: 'Download resume'
   },
   nav: {
@@ -18,17 +18,17 @@ const en = {
   sections: {
     experienceTitle: 'Experience',
     experienceSubtitle:
-      'Frontend Architect mindset with UI Lead execution—impact measured in velocity, quality, and outcomes.',
+      'UI Lead Execution • Frontend Architect Mindset: Accelerating development velocity and ensuring uncompromising code quality through scalable architecture..',
     portfolioTitle: 'Portfolio',
     portfolioSubtitle:
-      'Problem → Solution → Impact. A curated collection of work across enterprise and product teams.',
+      'Problem, Solution, and Measurable Impact: A curated portfolio of high-consequence initiatives delivered across enterprise and product-led organizations.',
     expertiseTitle: 'Technical expertise',
     expertiseSubtitle:
-      'Capabilities aligned to Frontend Architect and UI Lead responsibilities in enterprise environments.',
+      'Enterprise-Grade Competencies for Frontend Architecture & UI Governance: Demonstrating deep technical proficiency aligned with mission-critical industry standards and leadership responsibilities.',
     certificationsTitle: 'Certifications',
     certificationsSubtitle:
-      'Continuous learning across frontend, UI/UX, version control, and AI-assisted engineering.',
-    contactTitle: 'Let’s discuss your project',
+      'Commitment to Technical Excellence & Continuous Evolution:Maintaining a rigorous learning trajectory across Frontend Architecture, UI/UX Design, and AI-Augmented Engineering to drive modern delivery standards.',
+    contactTitle: 'Let’s discuss about project',
     contactSubtitle:
       'Open to Frontend Architect / UI Lead / Senior UI Leadership opportunities.'
   },

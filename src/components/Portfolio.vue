@@ -243,13 +243,13 @@
         class="scroll-mt-20 bg-slate-50 py-12 dark:bg-slate-900 md:py-16 lg:py-20"
       >
         <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div class="max-w-2xl">
+          <div class="max-w-2xl xl:max-w-5xl">
             <h2
               class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-3xl"
             >
               {{ t.sections.experienceTitle }}
             </h2>
-            <p class="mt-2 text-base leading-relaxed text-slate-600 dark:text-slate-300">
+            <p class="mt-2 text-base leading-relaxed text-slate-600 dark:text-slate-300 max-w-3xl lg:max-w-none xl:max-w-none xl:whitespace-nowrap">
               {{ t.sections.experienceSubtitle }}
             </p>
           </div>
@@ -317,13 +317,13 @@
         class="scroll-mt-20 border-t border-slate-200 bg-white py-12 dark:border-slate-700 dark:bg-slate-800/50 md:py-16 lg:py-20"
       >
         <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div class="max-w-2xl">
+          <div class="max-w-2xl xl:max-w-5xl">
             <h2
               class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-3xl"
             >
               {{ t.sections.portfolioTitle }}
             </h2>
-            <p class="mt-2 text-base leading-relaxed text-slate-600 dark:text-slate-300">
+            <p class="mt-2 text-base leading-relaxed text-slate-600 dark:text-slate-300 lg:max-w-none xl:max-w-none xl:whitespace-nowrap">
               {{ t.sections.portfolioSubtitle }}
             </p>
           </div>
@@ -364,13 +364,13 @@
         class="scroll-mt-20 border-t border-slate-200 bg-slate-50 py-12 dark:border-slate-700 dark:bg-slate-900 md:py-16 lg:py-20"
       >
         <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div class="max-w-2xl">
+          <div class="max-w-2xl xl:max-w-5xl">
             <h2
               class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-3xl"
             >
               {{ t.sections.expertiseTitle }}
             </h2>
-            <p class="mt-2 text-base leading-relaxed text-slate-600 dark:text-slate-300">
+            <p class="mt-2 text-base leading-relaxed text-slate-600 dark:text-slate-300 lg:max-w-none xl:max-w-none whitespace-pre-line">
               {{ t.sections.expertiseSubtitle }}
             </p>
           </div>
