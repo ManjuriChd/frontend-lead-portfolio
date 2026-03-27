@@ -28,15 +28,16 @@
           : 'rgb(255 255 255 / var(--tw-bg-opacity, 1))'
       }"
     >
-      <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
-        <a
-          href="#"
-          class="text-2xl font-bold tracking-tighter text-slate-600 dark:text-slate-200 shadow-lg px-2 py-1 rounded bg-white/80 dark:bg-slate-900/70"
-          style="box-shadow: 0 4px 20px 0 rgba(130,140,180,0.17);"
-        >
-          Manjuri Choudhury
-        </a>
-        <div class="flex items-center gap-2">
+      <Disclosure v-slot="{ open, close }" as="div">
+        <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+          <a
+            href="#"
+            class="text-2xl font-bold tracking-tighter text-slate-600 dark:text-slate-200 shadow-lg px-2 py-1 rounded bg-white/80 dark:bg-slate-900/70"
+            style="box-shadow: 0 4px 20px 0 rgba(130,140,180,0.17);"
+          >
+            Manjuri Choudhury
+          </a>
+          <div class="flex items-center gap-2">
           <!-- Desktop nav -->
           <nav
             aria-label="Primary"
@@ -94,57 +95,58 @@
             <option value="de">DE</option>
           </select>
           <!-- Hamburger button: visible only on mobile -->
-          <button
-            type="button"
-            class="rounded-full p-2 sm:hidden text-slate-700 hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-200/60"
-            :aria-label="menuOpen ? 'Close menu' : 'Open menu'"
-            :aria-expanded="menuOpen"
-            aria-controls="mobile-menu"
-            @click="menuOpen = !menuOpen"
-          >
-            <span v-if="!menuOpen" class="block h-5 w-5" aria-hidden="true">
-              <svg class="text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </span>
-            <span v-else class="block h-5 w-5" aria-hidden="true">
-              <svg class="text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </span>
-          </button>
+            <DisclosureButton
+              class="rounded-full p-2 sm:hidden text-slate-700 hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-200/60"
+              :aria-label="open ? 'Close menu' : 'Open menu'"
+              :aria-expanded="open"
+              aria-controls="mobile-menu"
+            >
+              <span v-if="!open" class="block h-5 w-5" aria-hidden="true">
+                <svg class="text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </span>
+              <span v-else class="block h-5 w-5" aria-hidden="true">
+                <svg class="text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </span>
+            </DisclosureButton>
+          </div>
         </div>
-      </div>
-      <!-- Mobile menu (hamburger dropdown): visible only when menuOpen -->
-      <div
-        id="mobile-menu"
-        class="overflow-hidden transition-all duration-200 ease-out sm:hidden"
-        :class="menuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'"
-        role="region"
-        aria-label="Mobile navigation"
-      >
-        <nav
-          class="border-t border-slate-200 px-4 py-3 bg-gradient-to-tr from-slate-200 via-slate-100 to-blue-50 dark:from-slate-900 dark:to-slate-700"
-          aria-label="Primary mobile"
+        <!-- Mobile menu (Headless UI disclosure panel) -->
+        <DisclosurePanel
+          as="div"
+          id="mobile-menu"
+          static
+          class="overflow-hidden transition-all duration-200 ease-out sm:hidden"
+          :class="open ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'"
+          role="region"
+          aria-label="Mobile navigation"
         >
-          <a
-            v-for="link in navLinks"
-            :key="link.href"
-            :href="link.href"
-            :aria-current="activeSection === link.href ? 'page' : undefined"
-            :class="[
-              'block rounded-md px-3 py-2.5 text-base font-medium transition shadow hover:shadow-lg',
-              activeSection === link.href
-                    // Active mobile: same bg as hover in light mode
-                    ? 'bg-slate-300/80 text-slate-900 dark:bg-slate-100 dark:text-slate-900 shadow-xl'
-                : 'text-slate-700 hover:bg-slate-300/80 hover:text-slate-900 dark:text-blue-100 dark:hover:bg-slate-700 dark:hover:text-white'
-            ]"
-            @click="() => { activeSection = link.href; menuOpen = false; }"
+          <nav
+            class="border-t border-slate-200 px-4 py-3 bg-gradient-to-tr from-slate-200 via-slate-100 to-blue-50 dark:from-slate-900 dark:to-slate-700"
+            aria-label="Primary mobile"
           >
-            {{ t.nav[link.key] }}
-          </a>
-        </nav>
-      </div>
+            <a
+              v-for="link in navLinks"
+              :key="link.href"
+              :href="link.href"
+              :aria-current="activeSection === link.href ? 'page' : undefined"
+              :class="[
+                'block rounded-md px-3 py-2.5 text-base font-medium transition shadow hover:shadow-lg',
+                activeSection === link.href
+                      // Active mobile: same bg as hover in light mode
+                      ? 'bg-slate-300/80 text-slate-900 dark:bg-slate-100 dark:text-slate-900 shadow-xl'
+                  : 'text-slate-700 hover:bg-slate-300/80 hover:text-slate-900 dark:text-blue-100 dark:hover:bg-slate-700 dark:hover:text-white'
+              ]"
+              @click="handleMobileNavClick(link.href, close)"
+            >
+              {{ t.nav[link.key] }}
+            </a>
+          </nav>
+        </DisclosurePanel>
+      </Disclosure>
     </header>
 
     <main id="content">
@@ -477,6 +479,7 @@
 </template>
 
 <script setup lang="ts">
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue';
 import { computed, onMounted, ref } from 'vue';
 import en from '../locales/en';
 import fr from '../locales/fr';
@@ -485,7 +488,6 @@ import de from '../locales/de';
 const THEME_KEY = 'portfolio-theme';
 
 const isDark = ref(false);
-const menuOpen = ref(false);
 const heroImageError = ref(false);
 const activeSection = ref('#experience');
 
@@ -523,6 +525,11 @@ function applyTheme(dark: boolean) {
     html.classList.remove('dark');
     body.classList.remove('dark');
   }
+}
+
+function handleMobileNavClick(href: string, close: () => void) {
+  activeSection.value = href;
+  close();
 }
 
 onMounted(() => {

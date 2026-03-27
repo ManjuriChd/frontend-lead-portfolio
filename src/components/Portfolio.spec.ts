@@ -212,14 +212,13 @@ describe('Portfolio.vue', () => {
     it('toggles mobile menu on hamburger click', async () => {
       const wrapper = mount(Portfolio);
       const hamburger = wrapper.find('button[aria-controls="mobile-menu"]');
-      const mobileMenu = wrapper.find('#mobile-menu');
-      expect(mobileMenu.classes()).toContain('max-h-0');
+      expect(hamburger.attributes('aria-expanded')).toBe('false');
       await hamburger.trigger('click');
       await wrapper.vm.$nextTick();
-      expect(mobileMenu.classes()).toContain('max-h-64');
+      expect(hamburger.attributes('aria-expanded')).toBe('true');
       await hamburger.trigger('click');
       await wrapper.vm.$nextTick();
-      expect(mobileMenu.classes()).toContain('max-h-0');
+      expect(hamburger.attributes('aria-expanded')).toBe('false');
     });
 
     it('closes mobile menu when a nav link is clicked', async () => {
@@ -227,11 +226,10 @@ describe('Portfolio.vue', () => {
       const hamburger = wrapper.find('button[aria-controls="mobile-menu"]');
       await hamburger.trigger('click');
       await wrapper.vm.$nextTick();
-      const mobileNavLinks = wrapper.findAll('#mobile-menu a');
+      const mobileNavLinks = wrapper.findAll('nav[aria-label="Primary mobile"] a');
       await mobileNavLinks[0].trigger('click');
       await wrapper.vm.$nextTick();
-      const mobileMenu = wrapper.find('#mobile-menu');
-      expect(mobileMenu.classes()).toContain('max-h-0');
+      expect(hamburger.attributes('aria-expanded')).toBe('false');
     });
   });
 
