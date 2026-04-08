@@ -38,7 +38,7 @@ const de = {
       items: [
         'Vue, React, Angular, TypeScript, JavaScript (ES6+)',
         'HTML5, CSS3, LESS, SASS, Tailwind, Bootstrap',
-        'Responsives, mobile-first Design und Cross-Browser-Kompatibilität'
+        'Responsives, mobile-first Design und Cross-Browser-Kompatibilität, Zod, machine readable UI'
       ]
     },
     {

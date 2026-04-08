@@ -38,7 +38,7 @@ const fr = {
       items: [
         'Vue, React, Angular, TypeScript, JavaScript (ES6+)',
         'HTML5, CSS3, LESS, SASS, Tailwind, Bootstrap',
-        'Responsive, mobile-first, compatibilité multi-navigateurs'
+        'Responsive, mobile-first, compatibilité multi-navigateurs, Zod, machine readable UI'
       ]
     },
     {
