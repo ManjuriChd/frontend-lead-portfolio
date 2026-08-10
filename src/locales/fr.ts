@@ -34,28 +34,51 @@ const fr = {
   },
   expertisePanels: [
     {
-      title: 'Ingénierie Frontend',
+      title: 'Langages & Frameworks',
       items: [
-        'Vue, React, Angular, TypeScript, JavaScript (ES6+)',
-        'HTML5, CSS3, LESS, SASS, Tailwind, Bootstrap',
-        'Responsive, mobile-first, compatibilité multi-navigateurs, Zod, machine readable UI'
+        'HTML5, CSS3, JavaScript (ES6+), TypeScript, Node.js',
+        'React, Angular, Vue.js, React Native, RxJS',
+        'SAP UI5, SAP Fiori, architecture microfrontend, Go Lang, Java'
       ]
     },
     {
-      title: 'Design Systems',
+      title: 'Design Systems & Style',
       items: [
-        'Bibliothèques de composants et guides de style évolutifs',
-        'Storybook pour isolation, réutilisabilité et documentation',
-        'Patrons UX cohérents et onboarding développeurs'
+        'Design systems, bibliothèques de composants et Storybook',
+        'SASS, LESS, Tailwind CSS, design responsive et mobile-first',
+        'Figma, Invision et patrons UX cohérents'
       ]
     },
     {
-      title: 'Architecture & Delivery',
+      title: 'Outils IA & Productivité',
       items: [
-        'Intégrations RESTful ; exposition à GraphQL',
-        'OAuth 2.0 et RBAC pour un accès UI sécurisé',
-        'Optimisation des performances et bonnes pratiques (WCAG, tests)',
-        'Animation Agile/Scrum et collaboration parties prenantes'
+        'Cursor AI, Claude AI, Gemini AI, ChatGPT, GitHub Copilot',
+        'Gen AI et MCP pour des workflows de développement augmentés par l\'IA',
+        'Ingénierie orientée automatisation et montée en compétences continue'
+      ]
+    },
+    {
+      title: 'API, Intégration & Données',
+      items: [
+        'API RESTful, consommation d\'API et intégration système',
+        'Exposition GraphQL et échange de données en temps réel',
+        'PostgreSQL (requêtes et interaction schéma)'
+      ]
+    },
+    {
+      title: 'Sécurité & Performance',
+      items: [
+        'OAuth 2.0, JWT et contrôle d\'accès basé sur les rôles (RBAC)',
+        'Optimisation des performances, efficacité de rendu, compatibilité multi-navigateurs',
+        'Accessibilité WCAG et ingénierie de l\'utilisabilité'
+      ]
+    },
+    {
+      title: 'Qualité & Delivery',
+      items: [
+        'Mocha, Jest, tests manuels et automatisés, outils de débogage',
+        'Git (branching, revues de code, workflows)',
+        'Delivery Agile/Scrum, collaboration parties prenantes et mentorat d\'équipe'
       ]
     }
   ]

@@ -34,28 +34,51 @@ const de = {
   },
   expertisePanels: [
     {
-      title: 'Frontend-Entwicklung',
+      title: 'Sprachen & Frameworks',
       items: [
-        'Vue, React, Angular, TypeScript, JavaScript (ES6+)',
-        'HTML5, CSS3, LESS, SASS, Tailwind, Bootstrap',
-        'Responsives, mobile-first Design und Cross-Browser-Kompatibilität, Zod, machine readable UI'
+        'HTML5, CSS3, JavaScript (ES6+), TypeScript, Node.js',
+        'React, Angular, Vue.js, React Native, RxJS',
+        'SAP UI5, SAP Fiori, Microfrontend-Architektur, Go Lang, Java'
       ]
     },
     {
-      title: 'Designsysteme',
+      title: 'Designsysteme & Styling',
       items: [
-        'Skalierbare Komponentenbibliotheken und Styleguides',
-        'Storybook für Isolation, Wiederverwendbarkeit und Dokumentation',
-        'Konsistente UX-Patterns und Entwickler-Onboarding'
+        'Designsysteme, Komponentenbibliotheken und Storybook',
+        'SASS, LESS, Tailwind CSS, responsives und mobile-first Design',
+        'Figma, Invision und konsistente UX-Patterns'
       ]
     },
     {
-      title: 'Architektur & Delivery',
+      title: 'KI-Tools & Entwicklerproduktivität',
       items: [
-        'RESTful-Integrationen; Erfahrung mit GraphQL',
-        'OAuth 2.0 und RBAC für sicheren UI-Zugriff',
-        'Performance-Optimierung und Qualitätspraktiken (WCAG, Tests)',
-        'Agile/Scrum-Moderation und Stakeholder-Zusammenarbeit'
+        'Cursor AI, Claude AI, Gemini AI, ChatGPT, GitHub Copilot',
+        'Gen AI und MCP für KI-gestützte Entwicklungs-Workflows',
+        'Automatisierungsorientierte Entwicklung und kontinuierliches Upskilling'
+      ]
+    },
+    {
+      title: 'API, Integration & Daten',
+      items: [
+        'RESTful APIs, API-Nutzung und Systemintegration',
+        'GraphQL-Erfahrung und Echtzeit-Datenaustausch',
+        'PostgreSQL (Abfragen und Schema-Interaktion)'
+      ]
+    },
+    {
+      title: 'Sicherheit & Performance',
+      items: [
+        'OAuth 2.0, JWT und rollenbasierte Zugriffskontrolle (RBAC)',
+        'Performance-Optimierung, Rendering-Effizienz, Cross-Browser-Kompatibilität',
+        'WCAG-konforme Barrierefreiheit und Usability Engineering'
+      ]
+    },
+    {
+      title: 'Qualität & Delivery',
+      items: [
+        'Mocha, Jest, manuelle und automatisierte Tests, Debugging-Tools',
+        'Git (Branching, Code Reviews, Workflows)',
+        'Agile/Scrum-Delivery, Stakeholder-Zusammenarbeit und Team-Mentoring'
       ]
     }
   ]

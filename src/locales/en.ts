@@ -34,28 +34,51 @@ const en = {
   },
   expertisePanels: [
     {
-      title: 'Frontend Engineering',
+      title: 'Languages & Frameworks',
       items: [
-        'Vue, React, Angular, TypeScript, JavaScript (ES6+)',
-        'HTML5, CSS3, LESS, SASS, Tailwind, Bootstrap',
-        'Responsive, mobile-first, cross-browser compatibility, Zod, machine readable UI'
+        'HTML5, CSS3, JavaScript (ES6+), TypeScript, Node.js',
+        'React, Angular, Vue.js, React Native, RxJS',
+        'SAP UI5, SAP Fiori, Microfrontend Architecture, Go Lang, Java'
       ]
     },
     {
-      title: 'Design Systems',
+      title: 'Design Systems & Styling',
       items: [
-        'Scalable component libraries and style guides',
-        'Storybook for isolation, reusability, and documentation',
-        'Consistent UX patterns and developer onboarding'
+        'Design systems, component libraries, and Storybook',
+        'SASS, LESS, Tailwind CSS, responsive and mobile-first design',
+        'Figma, Invision, and consistent UX patterns'
       ]
     },
     {
-      title: 'Architecture & Delivery',
+      title: 'AI Tools & Developer Productivity',
       items: [
-        'RESTful integrations; exposure to GraphQL',
-        'OAuth 2.0 and RBAC for secure UI access',
-        'Performance optimization and quality practices (WCAG, testing)',
-        'Agile/Scrum facilitation and stakeholder collaboration'
+        'Cursor AI, Claude AI, Gemini AI, ChatGPT, GitHub Copilot',
+        'Gen AI and MCP for AI-augmented development workflows',
+        'Automation-oriented engineering and continuous upskilling'
+      ]
+    },
+    {
+      title: 'API, Integration & Data',
+      items: [
+        'RESTful APIs, API consumption and system integration',
+        'GraphQL exposure and real-time data exchange',
+        'PostgreSQL (queries and schema interaction)'
+      ]
+    },
+    {
+      title: 'Security & Performance',
+      items: [
+        'OAuth 2.0, JWT, and Role-Based Access Control (RBAC)',
+        'Performance optimization, rendering efficiency, cross-browser compatibility',
+        'WCAG-aligned accessibility and usability engineering'
+      ]
+    },
+    {
+      title: 'Quality & Delivery',
+      items: [
+        'Mocha, Jest, manual and automated testing, debugging tools',
+        'Git (branching, code reviews, workflows)',
+        'Agile/Scrum delivery, stakeholder collaboration, and team mentorship'
       ]
     }
   ]

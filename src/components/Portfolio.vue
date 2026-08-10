@@ -423,7 +423,7 @@
             </span>
           </div>
           <p class="mt-4 text-sm text-slate-500 dark:text-slate-400">
-            Additional: Lovable, OpenAI/ChatGPT, AI for Everyone, GenAI for Developers/DevOps, and more.
+            Additional: OpenAI/ChatGPT, AI for Everyone, AI for Business Applications, Vibe Coding with Claude & Copilot, Automated Report Generation, and more.
           </p>
         </div>
       </section>
@@ -690,14 +690,17 @@ const expertisePanels = computed<ExpertisePanel[]>(() => t.value.expertisePanels
 
 const certifications = [
   'Meta Frontend Developer',
-  'UI/UX',
-  'Version Control',
+  'UI/UX Design',
+  'Version Control (Git)',
+  'Generative AI & AI Development',
+  'Agentic AI & RAG (IBM)',
   'Cursor AI',
   'GitHub Copilot',
   'Claude',
-  'GenAI',
-  'RAG & Agentic AI (IBM)',
-  'Automation for Everyone'
+  'Lovable',
+  'Crew AI',
+  'Automation for Everyone',
+  'AI for Developers & DevOps'
 ];
 
 const contactCards = [

@@ -287,7 +287,7 @@ describe('Portfolio.vue', () => {
 
     it('renders expertise panels', () => {
       const wrapper = mount(Portfolio);
-      expect(wrapper.text()).toContain('Frontend Engineering');
+      expect(wrapper.text()).toContain('Languages & Frameworks');
       expect(wrapper.text()).toContain('Get in touch');
     });
   });
